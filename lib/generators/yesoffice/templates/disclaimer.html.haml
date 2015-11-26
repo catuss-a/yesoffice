@@ -1,0 +1,12 @@
+.alert.alert-danger
+  Vous utilisez actuellement une version ancienne de Microsoft Internet Explorer &reg; (version 7) qui n'est plus supportée par
+  ce site. Nous vous conseillons d'utiliser une version plus récente de ce logicel (version 8 minimum) ou d'autres
+  navigateurs comme Mozilla Firefox &reg; et Google Chrome &reg; afin de naviguer dans des conditions optimales.
+
+- if alert
+  :javascript
+    $(document).ready(function() {
+      alert("Vous utilisez actuellement une version ancienne de Microsoft Internet Explorer (version 7) qui n'est plus supportée par " +
+      "ce site. Nous vous conseillons d'utiliser une version plus récente de ce logicel (version 8 minimum) ou d'autres " +
+      "navigateurs comme Mozilla Firefox et Google Chrome afin de naviguer dans des conditions optimales.");
+    });

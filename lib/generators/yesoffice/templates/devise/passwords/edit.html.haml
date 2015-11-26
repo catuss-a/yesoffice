@@ -1,0 +1,17 @@
+.row
+  .col-md-4.col-md-offset-4
+    .panel.panel-default.panel-flat.login
+      .panel-heading Modifier mon mot de passe
+      .panel-body
+        = simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f|
+          = f.hidden_field :reset_password_token
+          = f.input :password, as: :password, label: 'Mot de passe'
+          = f.input :password_confirmation, as: :password, label: 'Confirmation du mot de passe'
+
+          .pull-right
+            = f.submit "Modifier mon mot de passe", class: 'btn btn-primary'
+          .clearfix
+
+    %center
+      %small
+        &copy; #{Date.today.year} Yesoffice

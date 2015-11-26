@@ -1,0 +1,23 @@
+- unless resource.errors.empty?
+  .alert.alert-danger
+    %center L'adresse email est introuvable
+
+.row
+  .col-md-4.col-md-offset-4
+    .panel.panel-default.panel-flat.login
+      .panel-heading
+        Mot de passe oublié ?
+      .panel-body
+        %p Veuillez saisir votre addresse email ci-dessous :
+
+        = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+          = f.input :email, required: true, error: false
+
+          .pull-right
+            = link_to 'Annuler', new_user_session_path, class: 'btn btn-default'
+            = f.submit 'Réinitialiser mon mot de passe', class: 'btn btn-primary'
+          .clearfix
+
+    %center
+      %small
+        &copy; #{Date.today.year} Yesoffice

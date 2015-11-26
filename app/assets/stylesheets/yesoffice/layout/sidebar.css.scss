@@ -1,0 +1,134 @@
+#sidebar-nav {
+  position: fixed;
+  width: 203px;
+  float: left;
+  margin: 0em;
+  overflow: hidden;
+}
+#sidebar-nav #yesoffice-menu {
+  list-style: none;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-bottom: 0;
+}
+#sidebar-nav #yesoffice-menu > li > a {
+  display: block;
+  padding: 14px 5px 12px 14px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid $sidebar-item-border-color;
+  box-shadow: 0 2px 1px -1px $sidebar-item-border-shadow;
+  color: $sidebar-item-color;
+  outline: 0px;
+  position: relative;
+  font-weight: normal;
+}
+#sidebar-nav #yesoffice-menu > li {
+  position: relative;
+  /* font awesome icon */
+}
+#sidebar-nav #yesoffice-menu > li .icon-group {
+  font-size: 22px;
+}
+#sidebar-nav #yesoffice-menu > li i {
+  font-size: 24px;
+}
+#sidebar-nav #yesoffice-menu > li:hover i {
+  opacity: 1;
+}
+#sidebar-nav #yesoffice-menu > li > a:hover {
+  color: $sidebar-item-hover-color;
+  text-decoration: none;
+  opacity: 1.0;
+}
+#sidebar-nav #yesoffice-menu > li.active a {
+  background-color: $sidebar-item-active-background-color;
+}
+#sidebar-nav #yesoffice-menu > li.active i {
+  opacity: 1;
+}
+#sidebar-nav #yesoffice-menu a span {
+  margin-left: 35px;
+  transition: color .1s linear;
+  -moz-transition: color .1s linear;
+  -webkit-transition: color .1s linear;
+  -o-transition: color .1s linear;
+}
+#sidebar-nav #yesoffice-menu a.ui-elements span {
+  margin-left: 25px;
+}
+#sidebar-nav #yesoffice-menu a .menu-icon {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  height: 44px;
+  width: 44px;
+  line-height: 52px;
+  text-align: center;
+  background-color: $sidebar-menu-icon-background-color;
+  border-right: 1px solid $sidebar-item-border-color;
+  border-bottom: 1px solid $sidebar-item-border-color;
+}
+#sidebar-nav #yesoffice-menu > li.active .menu-icon {
+  background-color: $sidebar-menu-icon-active-background-color;
+}
+#sidebar-nav #yesoffice-menu a i {
+  transition: opacity .1s ease;
+  -moz-transition: opacity .1s ease;
+  -webkit-transition: opacity .1s ease;
+  -o-transition: opacity .1s ease;
+}
+#sidebar-nav #yesoffice-menu a span {
+  margin-left: 50px;
+}
+#sidebar-nav #yesoffice-menu a i.icon-chevron-down {
+  position: relative;
+  float: right;
+  top: 8px;
+  left: -20px;
+  font-size: 11px;
+  color: #fff;
+  width: initial;
+  height: initial;
+}
+#sidebar-nav #yesoffice-menu > li.active .dropdown-toggle {
+  border-bottom: 0px;
+  box-shadow: none;
+}
+#sidebar-nav #yesoffice-menu ul.submenu {
+  list-style-type: circle;
+  display: none;
+  margin-bottom: 1px;
+  border-bottom: 1px solid $sidebar-item-border-color;
+  box-shadow: 0 2px 1px -1px $sidebar-item-border-shadow;
+  padding: 0px 0 0px 43px;
+  background-color: $sidebar-menu-icon-background-color;
+}
+#sidebar-nav #yesoffice-menu ul.submenu.active {
+  display: block;
+}
+#sidebar-nav #yesoffice-menu ul.submenu a {
+  font-weight: normal;
+  color: $sidebar-item-color;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  padding-left: 15px;
+}
+#sidebar-nav #yesoffice-menu ul.submenu li {
+  border-left: 1px solid $sidebar-item-border-color;
+}
+#sidebar-nav #yesoffice-menu ul.submenu li:first-child {
+  padding-top: 14px;
+}
+#sidebar-nav #yesoffice-menu ul.submenu li:last-child {
+  padding-bottom: 14px;
+}
+#sidebar-nav #yesoffice-menu ul.submenu a:hover {
+  color: $sidebar-item-hover-color;
+}
+#sidebar-nav #yesoffice-menu ul.submenu a.active {
+  font-weight: bold;
+  text-shadow: none;
+}

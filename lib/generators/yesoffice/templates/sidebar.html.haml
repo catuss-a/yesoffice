@@ -1,0 +1,10 @@
+#sidebar-nav
+  %ul#yesoffice-menu
+    %li.yesoffice
+      = link_to root_path do
+        .menu-icon
+          %i.icon-home
+        %span Accueil
+
+:javascript
+  $("#yesoffice-menu li[class*='#{current_section}']").addClass('active');

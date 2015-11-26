@@ -1,0 +1,15 @@
+.modal.fade#flashModal
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{type: 'button', data: {dismiss: 'modal'}} &times;
+        %h4 Information
+      .modal-body
+        %p= flash[:modal].html_safe
+      .modal-footer
+        %a.btn.btn-primary{href: '#', data: {dismiss: 'modal'}} Fermer
+
+:javascript
+  $(document).ready(function() {
+    $('#flashModal').modal('show');
+  });

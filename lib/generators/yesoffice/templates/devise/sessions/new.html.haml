@@ -1,0 +1,27 @@
+.row
+  .col-md-4.col-md-offset-4
+    .panel.panel-default.panel-flat.login
+      .panel-heading
+        Yesoffice
+        .pull-right
+          = link_to new_password_path(resource_name) do
+            J'ai perdu mon mot de passe
+            %i.icon-question-sign
+      .panel-body
+        = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+          = f.input :email
+          = f.input :password
+          - if devise_mapping.rememberable?
+            %div
+              %label.checkbox.muted
+                = f.check_box :remember_me
+                = 'Se souvenir de moi'
+          .pull-right
+            = f.submit t('devise.forms.sign_in_btn'), class: 'btn btn-primary'
+
+          .clearfix
+          = render 'devise/shared/links'
+
+    %center
+      %small
+        &copy; #{Date.today.year} Yesoffice

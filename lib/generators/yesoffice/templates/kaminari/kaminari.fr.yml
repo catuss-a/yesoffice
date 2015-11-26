@@ -1,0 +1,8 @@
+fr:
+  views:
+    pagination:
+      first: <<
+      last: ! '>>'
+      next: Suivant
+      previous: Précédent
+      truncate: ! '...'

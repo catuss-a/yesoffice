@@ -1,0 +1,10 @@
+- if @_breadcrumbs && !@_breadcrumbs.empty?
+  #breadcrumbs
+    %ul
+      - @_breadcrumbs.each do |crumb|
+        %li
+          = link_to crumb[:path] || '#' do
+            = crumb[:name]
+            .pointer
+              .arrow
+              .arrow-border
